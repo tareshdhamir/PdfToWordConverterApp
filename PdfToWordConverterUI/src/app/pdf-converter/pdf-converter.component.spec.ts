@@ -2,11 +2,13 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { provideHttpClientTesting, HttpTestingController } from '@angular/common/http/testing';
 import { PdfConverterComponent } from './pdf-converter.component';
 import { provideHttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 
 describe('PdfConverterComponent', () => {
   let component: PdfConverterComponent;
   let fixture: ComponentFixture<PdfConverterComponent>;
   let httpMock: HttpTestingController;
+  let apiUrl = environment.apiUrl;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
@@ -35,7 +37,7 @@ describe('PdfConverterComponent', () => {
     component.onUpload();
 
     // Expect the request with the correct URL and method
-    const req = httpMock.expectOne('http://localhost:5000/api/PdfToWord/convert');
+    const req = httpMock.expectOne(`${apiUrl}/PdfToWord/convert`);
     expect(req.request.method).toBe('POST');
 
     // Simulate a Blob response, which is what the component expects from the API
@@ -57,7 +59,7 @@ describe('PdfConverterComponent', () => {
 
     component.onUpload();
 
-    const req = httpMock.expectOne('http://localhost:5000/api/PdfToWord/convert');
+    const req = httpMock.expectOne(`${apiUrl}/PdfToWord/convert`);
     
     // Simulate a Blob response for the error, as the responseType is 'blob'
     const errorBlob = new Blob(['Error occurred'], { type: 'text/plain' });
@@ -72,7 +74,7 @@ describe('PdfConverterComponent', () => {
 
     component.onUpload();
 
-    const req = httpMock.expectOne('http://localhost:5000/api/PdfToWord/convert');
+    const req = httpMock.expectOne(`${apiUrl}/PdfToWord/convert`);
     
     // Simulate an empty Blob response
     const emptyBlob = new Blob([], { type: 'application/pdf' });
@@ -106,7 +108,7 @@ describe('PdfConverterComponent', () => {
     component.onUpload();
   
     // Expect the request with the correct URL and method
-    const req = httpMock.expectOne('http://localhost:5000/api/PdfToWord/convert');
+    const req = httpMock.expectOne(`${apiUrl}/PdfToWord/convert`);
     expect(req.request.method).toBe('POST');
   
     // Simulate a Blob response, which is what the component expects from the API
@@ -125,7 +127,7 @@ describe('PdfConverterComponent', () => {
 
     component.onUpload();
 
-    const req = httpMock.expectOne('http://localhost:5000/api/PdfToWord/convert');
+    const req = httpMock.expectOne(`${apiUrl}/PdfToWord/convert`);
     
     // Simulate an HTTP error response
     req.error(new ErrorEvent('Network error'), { status: 500, statusText: 'Internal Server Error' });
