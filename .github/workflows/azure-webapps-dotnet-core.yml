@@ -19,16 +19,16 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore dependencies
-        run: dotnet restore ../PdfToWordConverterApi/PdfToWordConverterApi
+        run: dotnet restore ./PdfToWordConverterApi/PdfToWordConverterApi
 
       - name: Build the API
-        run: dotnet build ../PdfToWordConverterApi/PdfToWordConverterApi --configuration Release
+        run: dotnet build ./PdfToWordConverterApi/PdfToWordConverterApi --configuration Release
 
       - name: Run tests
-        run: dotnet test ../PdfToWordConverterApi/PdfToWordconverterApi.Tests
+        run: dotnet test ./PdfToWordConverterApi/PdfToWordconverterApi.Tests
 
       - name: Publish the API
-        run: dotnet publish ../PdfToWordConverterApi/PdfToWordConverterApi --configuration Release --output ./published-api
+        run: dotnet publish ./PdfToWordConverterApi/PdfToWordConverterApi --configuration Release --output ./published-api
 
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
