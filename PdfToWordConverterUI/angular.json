@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/pdf-to-word-converter-ui",
+            "outputPath": "dist/pdftowordconverterui",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
