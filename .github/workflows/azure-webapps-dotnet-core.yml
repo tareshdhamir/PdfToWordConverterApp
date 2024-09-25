@@ -25,7 +25,7 @@ jobs:
         run: dotnet build ./PdfToWordConverterApi --configuration Release
 
       - name: Run tests
-        run: dotnet test ./PdfToWordConverterApi.Tests
+        run: dotnet test ./PdfToWordconverterApi.Tests
 
       - name: Publish the API
         run: dotnet publish ./PdfToWordConverterApi --configuration Release --output ./published-api
