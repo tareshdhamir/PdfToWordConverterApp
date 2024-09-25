@@ -1,0 +1,10 @@
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  button {
+    margin-top: 20px;
+  }
+  

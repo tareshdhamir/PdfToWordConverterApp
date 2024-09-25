@@ -1,0 +1,179 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\projects\\PdfToWordConverterApp\\PdfToWordConverterApi\\PdfToWordconverterApi.Tests\\PdfToWordconverterApi.Tests.csproj": {}
+  },
+  "projects": {
+    "D:\\projects\\PdfToWordConverterApp\\PdfToWordConverterApi\\PdfToWordconverterApi.Tests\\PdfToWordconverterApi.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\projects\\PdfToWordConverterApp\\PdfToWordConverterApi\\PdfToWordconverterApi.Tests\\PdfToWordconverterApi.Tests.csproj",
+        "projectName": "PdfToWordconverterApi.Tests",
+        "projectPath": "D:\\projects\\PdfToWordConverterApp\\PdfToWordConverterApi\\PdfToWordconverterApi.Tests\\PdfToWordconverterApi.Tests.csproj",
+        "packagesPath": "C:\\Users\\Taresh Dhamir\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\PdfToWordConverterApp\\PdfToWordConverterApi\\PdfToWordconverterApi.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Taresh Dhamir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\projects\\PdfToWordConverterApp\\PdfToWordConverterApi\\PdfToWordConverterApi\\PdfToWordConverterApi.csproj": {
+                "projectPath": "D:\\projects\\PdfToWordConverterApp\\PdfToWordConverterApi\\PdfToWordConverterApi\\PdfToWordConverterApi.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\projects\\PdfToWordConverterApp\\PdfToWordConverterApi\\PdfToWordConverterApi\\PdfToWordConverterApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\projects\\PdfToWordConverterApp\\PdfToWordConverterApi\\PdfToWordConverterApi\\PdfToWordConverterApi.csproj",
+        "projectName": "PdfToWordConverterApi",
+        "projectPath": "D:\\projects\\PdfToWordConverterApp\\PdfToWordConverterApi\\PdfToWordConverterApi\\PdfToWordConverterApi.csproj",
+        "packagesPath": "C:\\Users\\Taresh Dhamir\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\PdfToWordConverterApp\\PdfToWordConverterApi\\PdfToWordConverterApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Taresh Dhamir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Aspose.PDF": {
+              "target": "Package",
+              "version": "[24.9.0, )"
+            },
+            "Aspose.Words": {
+              "target": "Package",
+              "version": "[24.9.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Tesseract": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
